@@ -5,15 +5,50 @@
   </head>
   <body>
     <h1>Bag Fee Calculator</h1>
-    <label for="travelers">Number of Travelers:</label>
-    <input type="number" id="travelers" min="1" /><br /><br />
-    <label for="bags">Number of Bags:</label>
-    <input type="number" id="bags" min="0" /><br /><br />
-    <label for="trips">Trips per Year:</label>
-    <input type="number" id="trips" min="1" /><br /><br />
-    <button onclick="calculateBagFees()">Calculate</button><br /><br />
-    <label for="total">Total Bag Fees per Year:</label>
-    <input type="text" id="total" disabled />
+    <div>
+      <label for="travelers">Number of Travelers:</label>
+      <input
+        type="number"
+        id="travelers"
+        name="travelers"
+        value="1"
+        min="1"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="total-bags">Total Number of Bags:</label>
+      <input
+        type="number"
+        id="total-bags"
+        name="total-bags"
+        value="1"
+        min="1"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="vacations-per-year">Number of Vacations Per Year:</label>
+      <input
+        type="number"
+        id="vacations-per-year"
+        name="vacations-per-year"
+        value="1"
+        min="1"
+        required
+      />
+    </div>
+
+    <div>
+      <button id="calculate-btn" type="button">Calculate</button>
+    </div>
+
+    <div>
+      <label for="total-bag-fees">Total Bag Fees Per Year:</label>
+      <output id="total-bag-fees"></output>
+    </div>
   </body>
   <script src="bagFeeCalculator.js"></script>
 </html>

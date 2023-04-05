@@ -1,13 +1,17 @@
-function calculateBagFees() {
-  const travelers = document.getElementById("travelers").value;
-  const bags = document.getElementById("bags").value;
-  const trips = document.getElementById("trips").value;
+const calculateBtn = document.querySelector("#calculate-btn");
+const totalBagFeesOutput = document.querySelector("#total-bag-fees");
 
-  // calculate total bag fees
-  const firstBagFee = travelers * bags * 30;
-  const secondBagFee = bags > 1 ? travelers * trips * 40 : 0;
+calculateBtn.addEventListener("click", () => {
+  const travelers = parseInt(document.querySelector("#travelers").value);
+  const totalBags = parseInt(document.querySelector("#total-bags").value);
+  const vacationsPerYear = parseInt(
+    document.querySelector("#vacations-per-year").value
+  );
+
+  const firstBagFee = travelers * totalBags * vacationsPerYear * 30;
+  const secondBagFee =
+    totalBags > 1 ? travelers * (vacationsPerYear * 2) * 40 : 0;
   const totalBagFees = firstBagFee + secondBagFee;
 
-  // display total bag fees
-  document.getElementById("total").value = "$" + totalBagFees;
-}
+  totalBagFeesOutput.value = `$${totalBagFees}`;
+});
