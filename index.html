@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bag Fee Calculator</title>
+  </head>
+  <body>
+    <h1>Bag Fee Calculator</h1>
+    <label for="travelers">Number of Travelers:</label>
+    <input type="number" id="travelers" min="1" /><br /><br />
+    <label for="bags">Number of Bags:</label>
+    <input type="number" id="bags" min="0" /><br /><br />
+    <label for="trips">Trips per Year:</label>
+    <input type="number" id="trips" min="1" /><br /><br />
+    <button onclick="calculateBagFees()">Calculate</button><br /><br />
+    <label for="total">Total Bag Fees per Year:</label>
+    <input type="text" id="total" disabled />
+  </body>
+  <script src="bagFeeCalculator.js"></script>
+</html>
