@@ -8,7 +8,7 @@ calculateBtn.addEventListener("click", () => {
     document.querySelector("#vacations-per-year").value
   );
 
-  const firstBagFee = travelers * totalBags * vacationsPerYear * 30;
+  const firstBagFee = travelers * (vacationsPerYear * 2) * 30;
   const secondBagFee =
     totalBags > 1 ? travelers * (vacationsPerYear * 2) * 40 : 0;
   const totalBagFees = firstBagFee + secondBagFee;
