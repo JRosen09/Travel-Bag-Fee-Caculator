@@ -6,50 +6,52 @@
   </head>
 
   <body>
-    <h1>Bag Fee Calculator</h1>
-    <div>
-      <label for="travelers">Number of Travelers:</label>
-      <input
-        type="number"
-        id="travelers"
-        name="travelers"
-        value="1"
-        min="1"
-        required
-      />
-    </div>
+    <div class="container">
+      <h1>Bag Fee Calculator</h1>
+      <div>
+        <label for="travelers">How Many Travelers:</label>
+        <input
+          type="number"
+          id="travelers"
+          name="travelers"
+          value="1"
+          min="1"
+          required
+        />
+      </div>
 
-    <div>
-      <label for="total-bags">Total Number of Bags:</label>
-      <input
-        type="number"
-        id="total-bags"
-        name="total-bags"
-        value="1"
-        min="1"
-        required
-      />
-    </div>
+      <div>
+        <label>Total Number of Bags:</label>
+        <input
+          type="number"
+          id="total-bags"
+          name="total-bags"
+          value="1"
+          min="1"
+          required
+        />
+      </div>
 
-    <div>
-      <label for="vacations-per-year">Number of Vacations Per Year:</label>
-      <input
-        type="number"
-        id="vacations-per-year"
-        name="vacations-per-year"
-        value="1"
-        min="1"
-        required
-      />
-    </div>
+      <div>
+        <label for="vacations-per-year"># of Vacations Per Year:</label>
+        <input
+          type="number"
+          id="vacations-per-year"
+          name="vacations-per-year"
+          value="1"
+          min="1"
+          required
+        />
+      </div>
 
-    <div>
-      <button id="calculate-btn" type="button">Calculate</button>
-    </div>
+      <div>
+        <button id="calculate-btn" type="button">Calculate</button>
+      </div>
 
-    <div>
-      <label for="total-bag-fees">Total Bag Fees Per Year:</label>
-      <output id="total-bag-fees"></output>
+      <div class="totalfee">
+        <label for="total-bag-fees">Total Bag Fees Per Year:</label>
+        <output id="total-bag-fees"></output>
+      </div>
     </div>
   </body>
   <script src="bagFeeCalculator.js"></script>
