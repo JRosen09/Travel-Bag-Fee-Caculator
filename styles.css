@@ -4,7 +4,7 @@ body {
   place-items: center;
   text-align: center;
   padding: 0 24px;
-  background-color: #f8f7f6;
+  background-color: #ffffff;
   color: #000000;
   font-family: Arial, sans-serif;
 }
@@ -67,7 +67,7 @@ input[type="number"] {
   padding: 0 10px;
   border-radius: 5px;
   border: 1px solid #000000;
-  background-color: #f8f7f6;
+  background-color: #ffffff;
   color: #000000;
   font-size: 16px;
   text-align: center;
